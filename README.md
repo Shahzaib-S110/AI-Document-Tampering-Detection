@@ -62,7 +62,6 @@ report/
 
 ## Contributors
 
-Add your group member names here.
 Moaz Kashif 23L-2626
 Umer Khalid 23L-2599
 
