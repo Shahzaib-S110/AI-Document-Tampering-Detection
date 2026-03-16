@@ -1,1 +1,9 @@
-
+dataset/
+*.zip
+*.csv
+*.png
+*.jpg
+*.jpeg
+*.ipynb_checkpoints
+__pycache__/
+.env
