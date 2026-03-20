@@ -6,7 +6,8 @@ Digital documents such as ID cards, certificates, and legal contracts are increa
 
 ## Problem Statement
 
-Document forgery is a serious issue in financial institutions, government departments, and educational organizations. Traditional verification methods cannot reliably detect subtle manipulations such as copy-move attacks, splicing, or pixel-level edits. This project aims to build a deep learning-based system capable of identifying manipulated regions in digital documents.
+Document forgery is a big problem in places like banks, government offices, and schools. Traditional checking methods often fail to detect small changes, such as copy-move edits, splicing, or tiny pixel-level modifications. This project aims to create a deep learning system that can find and highlight the altered parts of digital documents.
+
 
 ## Target Audience
 
