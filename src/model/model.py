@@ -18,6 +18,19 @@ Input: 384x384x3 (ELA map, ELA-normalized)
 Output: 384x384x1 (pixel probability)
 
 
+### Key Design Decisions
+
+| Decision | Choice | Reason |
+|----------|--------|--------|
+| Input | **ELA (Q=90)** | Tests forensic signal for pretrained localization |
+| Encoder body | **FROZEN** | Conv weights still extract edges/textures from ELA |
+| Encoder BN | **UNFROZEN** | Running stats adapt to ELA distribution (domain adaptation) |
+| Normalization | **ELA-specific** | Computed from training set, not ImageNet |
+| Decoder | UNet (TRAINABLE) | Skip connections preserve spatial detail |
+| Loss | BCEDiceLoss | Handles class imbalance at pixel level |
+
+
+
 
 # ============================================================
 # 4.1 Build Model (Frozen Body + BN Unfrozen)
